@@ -1,7 +1,7 @@
 Summary:	X Fixes extension library
 Name:		xorg-libXfixes
 Version:	5.0.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXfixes-%{version}.tar.bz2
@@ -66,7 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libXfixes.so
-%{_libdir}/libXfixes.la
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/xfixes.pc
 %{_mandir}/man3/*.3x*
