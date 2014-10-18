@@ -1,7 +1,7 @@
 Summary:	X Fixes extension library
 Name:		xorg-libXfixes
 Version:	5.0.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXfixes-%{version}.tar.bz2
@@ -43,6 +43,8 @@ use libXfixes.
 	--disable-silent-rules	\
 	--disable-static
 %{__make}
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %install
 rm -rf $RPM_BUILD_ROOT
